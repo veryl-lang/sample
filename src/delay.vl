@@ -26,3 +26,4 @@ module delay #(
         assign o_d = i_d;
     }
 }
+
