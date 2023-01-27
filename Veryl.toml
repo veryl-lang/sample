@@ -13,4 +13,4 @@ target        = {type = "source"}
 indent_width = 4
 
 [dependencies]
-veryl_sample5 = {git = "https://github.com/dalance/veryl_sample", rev = "a3fb1fe"}
+veryl_sample5 = {git = "https://github.com/dalance/veryl_sample", rev = "c06199e"}
