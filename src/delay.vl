@@ -1,12 +1,12 @@
 module delay #(
-    parameter DELAY: u32   = 1           ,
-    parameter WIDTH: u32   = 1           ,
-    parameter TYPE : type  = logic[WIDTH],
+    parameter DELAY: u32  = 1           ,
+    parameter WIDTH: u32  = 1           ,
+    parameter TYPE : type = logic<WIDTH>,
 ) (
-    i_clk  : input  logic ,
-    i_rst_n: input  logic ,
-    i_d    : input  TYPE  ,
-    o_d    : output TYPE  ,
+    i_clk  : input  logic,
+    i_rst_n: input  logic,
+    i_d    : input  TYPE ,
+    o_d    : output TYPE ,
 ) {
     if (DELAY >= 1) :g_delay {
         var delay: TYPE [DELAY];
@@ -17,7 +17,7 @@ module delay #(
                 delay = '0;
             } else {
                 delay[0] = i_d;
-                for i: u32  in 1..DELAY {
+                for i: u32 in 1..DELAY {
                     delay[i] = delay[i - 1];
                 }
             }
@@ -26,5 +26,3 @@ module delay #(
         assign o_d = i_d;
     }
 }
-
-
