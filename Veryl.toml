@@ -13,5 +13,7 @@ target        = {type = "source"}
 indent_width = 4
 
 [publish]
+bump_commit    = true
+publish_commit = true
 
 [dependencies]
