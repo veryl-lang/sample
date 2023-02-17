@@ -13,7 +13,5 @@ target        = {type = "source"}
 indent_width = 4
 
 [publish]
-auto_commit_after_bump    = true
-auto_commit_after_publish = true
 
 [dependencies]
