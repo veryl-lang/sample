@@ -1,4 +1,4 @@
-module delay #(
+pub module delay #(
     parameter DELAY: u32  = 1           ,
     parameter WIDTH: u32  = 1           ,
     parameter TYPE : type = logic<WIDTH>,
