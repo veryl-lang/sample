@@ -14,7 +14,7 @@ pub module delay #(
         assign o_d = delay[DELAY - 1];
         always_ff (i_clk, i_rst_n) {
             if_reset {
-                delay = '0;
+                delay = '{default: 0};
             } else {
                 delay[0] = i_d;
                 for i: u32 in 1..DELAY {
