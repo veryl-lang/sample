@@ -3,8 +3,8 @@ pub module delay #(
     param WIDTH: u32  = 1           ,
     param TYPE : type = logic<WIDTH>,
 ) (
-    i_clk  : input  logic,
-    i_rst_n: input  logic,
+    i_clk  : input  clock,
+    i_rst_n: input  reset,
     i_d    : input  TYPE ,
     o_d    : output TYPE ,
 ) {
