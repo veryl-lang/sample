@@ -67,3 +67,7 @@ revision = "bb28f79b87efd2feba2d0a22f6306855284f89ca"
 [[releases]]
 version = "0.12.0"
 revision = "33ddf03c55b74e3d89a7f00a1afb69d8fa80f7ee"
+
+[[releases]]
+version = "0.13.0"
+revision = "8799cfb19e50f60c6103dda46fe98c1c712a5f8b"
