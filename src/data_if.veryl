@@ -1,0 +1,13 @@
+pub interface data_if #(
+  param WIDTH: u32 = 1,
+) {
+  var data: logic<WIDTH>;
+
+  modport mp_in {
+    data: input,
+  }
+
+  modport mp_out {
+    data: output,
+  }
+}
